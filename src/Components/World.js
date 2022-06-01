@@ -13,7 +13,9 @@ function World({ world, onDeleteReview }) {
 
   return (
     <>
+
       <h1 onClick={handleClick}><WorldDetail /></h1>
+
     </>
   )
 }
