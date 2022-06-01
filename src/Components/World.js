@@ -11,7 +11,9 @@ function World({ world }) {
 
   return (
     <>
+world_fetch
       <h1 onClick={handleClick}>{world.name_of_world}</h1>
+main
     </>
   )
 }
