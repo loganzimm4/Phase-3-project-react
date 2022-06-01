@@ -11,3 +11,4 @@ function WorldDetail() {
 }
 
 export default WorldDetail;
+
