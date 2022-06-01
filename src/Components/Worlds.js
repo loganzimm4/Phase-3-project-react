@@ -22,10 +22,14 @@ function Worlds() {
     setWorlds([...worlds, newWorld])
   }
 
+  const onDeleteReview = (id) => {
+    setWorlds(worlds.filter(world => world.id !== id))
+  }
+
   return (
     <>
       {worlds.map((world) => (
-        <World key={world.id} world={world} />
+        <World onDeleteReview={onDeleteReview} key={world.id} world={world} />
       ))}
       <AddWorld handleNewWorld={handleNewWorld}/>
     </>

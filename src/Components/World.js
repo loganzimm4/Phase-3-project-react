@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
+import WorldDetail from './WorldDetail'
 
-function World({ world }) {
+function World({ world, onDeleteReview }) {
   const [selectWorld, setSelectWorld] = useState([])
 
   const handleClick = e => {
@@ -9,11 +10,10 @@ function World({ world }) {
       .then(data => setSelectWorld(data))
   }
 
+
   return (
     <>
-world_fetch
-      <h1 onClick={handleClick}>{world.name_of_world}</h1>
-main
+      <h1 onClick={handleClick}><WorldDetail /></h1>
     </>
   )
 }
