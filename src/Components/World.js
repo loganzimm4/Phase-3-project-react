@@ -1,10 +1,19 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 
 function World({ world }) {
+  const [selectWorld, setSelectWorld] = useState([])
+
+  const handleClick = e => {
+    fetch(`http://localhost:9292/world/${world.id}`)
+      .then(resp => resp.json())
+      .then(data => setSelectWorld(data))
+  }
 
   return (
     <>
-      <h1>{world.name_of_world}</h1>
+world_fetch
+      <h1 onClick={handleClick}>{world.name_of_world}</h1>
+main
     </>
   )
 }

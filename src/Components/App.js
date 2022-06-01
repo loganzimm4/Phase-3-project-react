@@ -1,10 +1,12 @@
 import React from 'react'
 
+
 function App() {
   return (
     <div className='App'>
-        <Navbar />
-        <p> Hello There </p>
+      <Navbar />
+      <br></br>
+      <p> Hello There </p>
     </div>
   )
 }
