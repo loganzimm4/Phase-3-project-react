@@ -4,7 +4,7 @@ import Worlds from './Components/Worlds'
 function App() {
   return (
     <div className="App">
-      <h1> heyyyyyy </h1>
+      <h1> This is the App title </h1>
       <Worlds />
     </div>
   );
