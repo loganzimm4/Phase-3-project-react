@@ -1,8 +1,8 @@
 import React from 'react'
 
 function Nav() {
-  return (
-    <Nav>
+    return (
+        <Nav>
             <NavLink to="/">
             </NavLink>
             <Bars />
@@ -15,7 +15,7 @@ function Nav() {
                 </NavLink>
             </NavMenu>
         </Nav>
-  )
+    )
 }
 
 export default Nav
