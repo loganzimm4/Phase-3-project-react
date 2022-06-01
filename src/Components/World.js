@@ -1,8 +1,12 @@
 import React from 'react'
 
-function World() {
+function World({ world }) {
+
   return (
-    <div>World</div>
+    <>
+      <div>World</div>
+      <h1>{world.name_of_world}</h1>
+    </>
   )
 }
 
